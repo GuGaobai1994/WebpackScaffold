@@ -1,0 +1,33 @@
+{
+  "name": "WebpackScaffold",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuGaobai1994/WebpackScaffold.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuGaobai1994/WebpackScaffold/issues"
+  },
+  "homepage": "https://github.com/GuGaobai1994/WebpackScaffold#readme",
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.4",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
