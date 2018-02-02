@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import {upload} from './qiniu.js';
+import {Upload, Chunk} from './qiniu.js';
 
 var fileList = new Array();
 
@@ -15,7 +15,8 @@ var pullfiles=function(){
         i++;
     }    
     console.log(fileList.length);
-    upload(fileList[0]);
+    var chunks = Chunk(fileList[0]);
+    Upload(chunks);
 }
 
 // set the input element onchange to call pullfiles
